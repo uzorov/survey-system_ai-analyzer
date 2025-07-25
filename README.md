@@ -107,5 +107,5 @@ docker-compose up --build
 
 ## Автор
 **Узоров Кирилл Александрович**  
-Ведущий разработчик
+Ведущий разработчик 
 Email: kirill.uzorov@tmk-group.com
