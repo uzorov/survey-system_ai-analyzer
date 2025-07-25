@@ -1,0 +1,27 @@
+[project]
+name = "ai-analyzer"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Узоров Кирилл Александрович",email = "kirill.uzorov@tmk-group.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "fastapi (>=0.116.1,<0.117.0)",
+    "uvicorn (>=0.35.0,<0.36.0)",
+    "langchain (>=0.3.26,<0.4.0)",
+    "openai (>=1.97.0,<2.0.0)",
+    "pydantic (>=2.11.7,<3.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "requests (>=2.32.4,<3.0.0)",
+    "huggingface-hub (>=0.33.4,<0.34.0)"
+]
+
+[tool.poetry]
+packages = [{include = "ai_analyzer", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

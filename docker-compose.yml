@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  ai-analyzer:
+    build: .
+    container_name: ai-analyzer
+    ports:
+      - "17304:8000"
+    environment:
+      - HUGGINGFACEHUB_API_TOKEN=hf_
+    image: uzorovkirill/ai-analyzer:latest
+    restart: unless-stopped
+    networks:
+      - analyzer_net
